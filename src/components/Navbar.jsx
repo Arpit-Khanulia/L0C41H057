@@ -1,7 +1,8 @@
+import ThemeSwitch from "./ThemeSwitch"
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm" >
+    <div className="navbar bg-base-100 shadow-lg" >
         <div className="navbar-start" >
             <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,7 +22,7 @@ const Navbar = () => {
                 <li><a>Item 3</a></li>
             </ul>
             </div>
-            <a className="btn btn-ghost text-xl ml-4">L0C41H057</a>
+            <a className="hidden md:block btn btn-ghost text-xl pl-0 md:pl-4 ml:0 md:ml-4">L0C41H057</a>
         </div>
         <div style={{ width:'400%'}} className="navbar-start hidden lg:flex" >
             <ul className="menu menu-horizontal px-1">
@@ -48,18 +49,9 @@ const Navbar = () => {
 
 
     {/* //theme button */}
-
-                <div className="dropdown dropdown-end mr-5">
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                        <button className="btn btn-ghost btn-circle">Theme</button>
-                    </div>
-                    <ul
-                        tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-32 p-2 shadow">
-                        <li><a className="text-lg">light</a></li>
-                        <li><a className="text-lg">dark</a></li>
-                    </ul>
-                </div>
+<div className="md:mx-5 hidden md:block ">
+        <ThemeSwitch/>
+</div>
 
 {/* // notification icon */}
                 <div className="dropdown dropdown-end mr-5" >
