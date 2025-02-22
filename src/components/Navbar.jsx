@@ -54,7 +54,7 @@ const Navbar = () => {
 </div>
 
 {/* // notification icon */}
-                <div className="dropdown dropdown-end mr-5" >
+                <div className="  dropdown dropdown-end mr-5" >
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <button className="btn btn-ghost btn-circle">
                             <div className="indicator">
@@ -65,7 +65,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-72 p-2 shadow">
+                        className=" bg-[#3E5879] menu menu-sm dropdown-content border-1 rounded-box z-1 mt-3 w-72 md:w-92 p-2 shadow-lg">
                         <li>
                         <a className="justify-between text-sm">
                             firedragon just uploaded a snippet
@@ -90,15 +90,15 @@ const Navbar = () => {
                 </div>
                 <ul
                     tabIndex={0}
-                    className=" menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-36 p-2 shadow">
+                    className=" menu menu-sm dropdown-content bg-[#3E5879] shadow-lg border-1 rounded-box z-1 mt-3 w-36 p-2 ">
                     <li>
-                    <a className="justify-between text-lg">
+                    <a className="justify-between text-sm">
                         Profile
                         {/* <span className="badge">New</span> */}
                     </a>
                     </li>
-                    <li><a className="text-lg">Settings</a></li>
-                    <li><a className="text-lg">Logout</a></li>
+                    <li><a className="text-sm">Settings</a></li>
+                    <li><a className="text-sm">Logout</a></li>
                 </ul>
             </div>
         </div>
